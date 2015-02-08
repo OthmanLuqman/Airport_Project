@@ -22,9 +22,12 @@ namespace Airline_Semester_Project_attempt4
     public sealed class SQLConnection    //singleton class takes care of our connection needs throughout each form
     {
 
-        private const string myConnectionString = "server=192.185.195.166;uid=comic_francisco2;" +
-            "pwd=51501fr7;database=comic_kanye1;";
 
+        //you must provide your own server information here to run the program!
+        //"server= <ip address>;uid=<userid>;" + "pwd=<password>;database=<mysqldatabase name>;"
+        private const string myConnectionString = "server=;uid=;" +
+            "pwd=;database=;";
+       
         private MySqlConnection connection;
 
         private static readonly SQLConnection instance = new SQLConnection();
